@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>javascript interactivity</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Interactivity</h1>
+  </header>
+
+  <section id="color-changer">
+    <h2>Color Changer</h2>
+    <button id="changeColorBtn">Change Color</button>
+  </section>
+
+  <section id="text-toggle">
+    <h2>Hide/unhide Text.</h2>
+    <p id="toggleText">Hello.
+        <br>
+      You can hide this and also unhude it.</p>
+    <button id="toggleBtn">Hide/unhide.</button>
+  </section>
+
+  <section id="contact-form">
+    <h2>Contact Us</h2>
+    <form id="contactForm" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <span class="error" id="nameError"></span>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" />
+      <span class="error" id="emailError"></span>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+      <span class="error" id="messageError"></span>
+
+      <button type="submit">Submit</button>
+      <p id="formSuccess" class="success"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
